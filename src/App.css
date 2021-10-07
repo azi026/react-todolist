@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+header{
+    font-size: 2rem;
+}
+header,form{
+    min-height: 20vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+form input,form button{
+    border:none;
+    background: white;
+    padding:0.5rem;
+    font-size:2rem;
+}
+form button{
+    color:#ff6f47;
+    background:#f7fffe;
+    cursor:pointer;
+    transition:all 0.3s ease;
+}
+
+form button:hover{
+    background:#ff6f47;
+    color:white;
+}
+.todo-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-list{
+    min-width: 30%;
+    list-style:none;
+
+}
+.todo{
+    margin:0.5rem;
+    background: white;
+    font-size:1.5rem;
+    color:black;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    transition:all 1s ease;
+}   
+.todo li{
+    flex:1;
+}
+.filter-todo{
+    padding: 1rem;
+}
+.select{
+    margin:1rem;
+    position:relative;
+    overflow: hidden;
+}
+select{
+    color:#ff6f47;
+    font-family:'poppins',sans-serif;
+    cursor:pointer;
+    width:12rem;
+}
+select{
+    -webkit-appearance:none;
+    -moz-appearacne:none;
+    -ms-appearance:none;
+    appearance:none;
+    outline: 0;
+    box-shadow:none;
+    border:0 !important;
+    background-image:none;
+}
+.select::after{
+    content:"\25BC";
+    position:absolute;
+    top:0;
+    right:0;
+    padding:1rem;
+    background:#ff6f47;
+    cursor:pointer;
+}
+.fa-trash,fa-check{
+    pointer-events:none;
+
+}
+.fall{
+    transform: translateY(10rem)rotateZ(20deg);
+    capacity:0;
+}
+.completed{
+    text-decoration:line-through;
+    opacity: 0.5;
+    color:crimson
+}
+.todo-item{
+    padding:0rem 0.5rem;
+}
+.trash-btn, .complete-btn{
+    background:#ff6f47;
+    color:white;
+    border:none;
+    padding:1rem;
+    cursor:pointer;
+}
+.complete-btn{
+    background:rgb(11,212,162);
+}
+
+.error{
+    color:red;
+    text-align: center;
+    font-weight: bold;
+    font-size:1rem;
+}
